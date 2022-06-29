@@ -11,13 +11,13 @@ header{
     display: inline-block;
     background-color: black;
     width: 100%;
-    height: 140px;
+    height: 100px;
     text-align: center;
 }
 
 
 .img {
-    width: 140px;
+    width: 100px;
     float: left;
 }
 
@@ -26,7 +26,7 @@ header{
     display: inline-block;
     width: 50%;
     margin: 0 auto;
-    padding: 50px;
+    padding: 25px;
 }
 .buscar{
     height: 25px;
@@ -44,11 +44,12 @@ header{
 
 .cuenta {
     display: inline-block;
-    float: right;
+    margin-left: 150px;
+    margin-bottom: 10px;
 }
 .inicio{
     display: inline-block;
-    margin: 20px 10px;
+    margin: 10px 10px;
 }
 
 .btnCuenta{
@@ -56,16 +57,15 @@ header{
     height: 30px;
     background-color: orange;
     border: 2px solid rgba(255, 68, 0, 0.575);
-    margin-right: 10px;
-    margin-top: 60px;
+    float: right;
 }
 .btnCarrito{
     width: 30px;
     height: 30px;
     background-color: orange;
     border: 2px solid rgba(255, 68, 0, 0.575);
-    margin-right: 20px;
-    margin-top: 60px;
+    float: right;
+    margin-right: 10px;
 }
 .imgCarrito {
     width: 16px;
@@ -106,7 +106,7 @@ a {
     font-size: 20px;
     color: rgb(0, 0, 0);
     background-color: rgb(255, 255, 255);
-    border: 2px solid orange;
+    border: 2px solid rgb(0, 0, 0);
 }
 
 /* --------------------- termina css para infoCompras----------------------------- */
@@ -166,13 +166,4 @@ footer {
 .logoFooter {
     width: 140px;
     margin: 0 auto;
-}
-
-
-.whatsapp{
-    position: fixed;
-    width: 40px;
-    border: 2px black solid;
-    border-radius: 60px;
-    margin: 450px 190px;
 }

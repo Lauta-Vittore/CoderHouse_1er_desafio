@@ -4,22 +4,30 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
     <title>Contacto</title>
 </head>
 <body>
     <header>
-        <nav>
-            <img src="../pic/logo.jpeg" alt="logo" width="90px">
-            <input type="text" placeholder="Buscar productos"><button>Buscar</button>
-            <ul>
-                <li><a href="../index.html">Inicio</a></li>
-                <li><a href="productos.html">Productos</a></li>
-                <li><a href="Contacto.html">Contacto</a></li>
-                <li><a href="blog.html">Blog</a></li>
-            </ul>
-            <button>Mi cuenta</button>
-        </nav>
-        <hr>
+        <img src="/pic/logo.jpeg" alt="logo" class="img">
+        <div class="menu">
+            
+            <nav>
+                <input type="text"  class="buscar" placeholder="Buscar productos" ><button class="btn">Buscar</button>
+                <ul>
+                    <li class="inicio"><a href="../index.html">Inicio</a></li>
+                    <li class="inicio"><a href="productos.html">Productos</a></li>
+                    <li class="inicio"><a href="Contacto.html">Contacto</a></li>
+                    <li class="inicio"><a href="blog.html">Blog</a></li>
+                </ul>
+            </nav>
+        </div>
+            <div class="cuenta">
+                <button class="btnCuenta">Mi cuenta</button>
+                <button class="btnCarrito"><img src="../pic/carro-de-compras.png" alt="carrito" class="imgCarrito"></button>
+            </div>
+        
+    
     </header>
     <main>
         <form>
@@ -40,21 +48,22 @@
         </form>
     </main>
     <footer>
-        <hr>
-        <ul>
+        <ul class="infoFooter">
             <li><a href="sobreNosotros.html">Sobre nosotros</a></li>
-            <li><a href="../index.html#paraTi">Productos para ti</a></li>
-            <li><a href="../index.html#masVendidos">Más vendidos</a></li>
+            <li><a href="#paraTi">Productos para ti</a></li>
+            <li><a href="#masVendidos">Más vendidos</a></li>
         </ul>
-        <img src="../pic/logo.jpeg" alt="logo" width="90px">
-        <ul>
-            <li><a href="#">Instagram</a></li>
-            <li><a href="#">Facebook</a></li>
-            <li><a href="#">Pinterest</a></li>
-            <li><a href="#">Correo</a></li>
-            <li><a href="sobreNosotros.html#ubi">Ubicación</a></li>
-            <li><a href="#">WhatsApp</a></li>
-        </ul>
+        <div class="logoRedes">
+            <img src="../pic/logo.jpeg" alt="logo" width="90px" class="logoFooter" >
+            <ul class="redes">
+                <li class="redes"><a href="https://www.instagram.com/bukee_ind/">Instagram</a></li>
+                <li class="redes"><a href="#">Facebook</a></li>
+                <li class="redes"><a href="#">Pinterest</a></li>
+                <li class="redes"><a href="#">Correo</a></li>
+                <li class="redes"><a href="pages/sobreNosotros.html#ubi">Ubicación</a></li>
+                <li class="redes"><a href="#">WhatsApp</a></li>
+            </ul>
+        </div>
     </footer>
 </body>
 </html>
