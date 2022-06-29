@@ -169,3 +169,10 @@ footer {
 }
 
 
+.whatsapp{
+    position: fixed;
+    width: 40px;
+    border: 2px black solid;
+    border-radius: 60px;
+    margin: 450px 190px;
+}
