@@ -8,64 +8,58 @@ body {
 }
 /* --------------------css para la navbar--------------------- */
 header{
-    display: inline-block;
+    display: flex;
+    flex-direction: row;
     background-color: black;
     width: 100%;
     height: 100px;
-    text-align: center;
+    justify-content: space-evenly;
 }
 
 
 .img {
     width: 100px;
-    float: left;
 }
 
 
 .menu {
-    display: inline-block;
     width: 50%;
-    margin: 0 auto;
-    padding: 25px;
+    margin: auto 0;
+    text-align: center;
 }
 .buscar{
     height: 25px;
     width: 450px;
-
+    justify-content: center;
 }
 
 .btn {
     background-color: darkorange;
     width: 60px;
-    height: 30px;
+    height: 35px;
 }
-
-
-
-.cuenta {
-    display: inline-block;
-    margin-left: 150px;
-    margin-bottom: 10px;
+.navegacion {
+    text-align: center;
 }
 .inicio{
     display: inline-block;
     margin: 10px 10px;
 }
-
+.cuenta{
+    margin: auto 0;
+}
 .btnCuenta{
     width: 100px;
     height: 30px;
     background-color: orange;
     border: 2px solid rgba(255, 68, 0, 0.575);
-    float: right;
 }
 .btnCarrito{
     width: 30px;
     height: 30px;
     background-color: orange;
     border: 2px solid rgba(255, 68, 0, 0.575);
-    float: right;
-    margin-right: 10px;
+    margin-left: 5px;
 }
 .imgCarrito {
     width: 16px;
@@ -81,29 +75,42 @@ a {
 /* ---------------------css para carusel----------------------------- */
 
 .carrusel{
+    display: flex;
+    justify-content: space-evenly;
     height: 500px;
     background-color: rgba(212, 212, 212, 0.801);
+    margin: 20px;
 }
 
 .imgCarrusel {
     width: 450px;
-    margin: 20px;
-    margin-left: 150px;
+}
+.whatsapp{
+    display: flex;
+    justify-content: right;
+    margin-right: 20px;
+    
+}
+.wpp{
+    width: 40px;
+    height: 40px;
+    position: fixed;
+    border-radius: 20px;
 }
 /* ---------------------termina css para carusel----------------------------- */
 /* ---------------------css para infoCompras----------------------------- */
 
 .infoCompra{
+    display: flex;
+    justify-content: space-around;
     height: 230px;
-    padding: 10px;
-    text-align: center;
+    margin-top: 30px;
 }
 
 .btnCompra {
     height: 190px;
-    width: 250px;
-    margin: 10px;
-    font-size: 20px;
+    width: 350px;;
+    font-size: 25px;
     color: rgb(0, 0, 0);
     background-color: rgb(255, 255, 255);
     border: 2px solid rgb(0, 0, 0);
@@ -115,14 +122,19 @@ a {
 .titulo{
     margin-left: 10px;
 }
-
+.paraTi {
+    display: flex;
+    justify-content: space-around;
+}
+.masVendidos {
+    display: flex;
+    justify-content: space-around;
+}
 .conteinerProductos {
-    display: inline-block;
     width: 300px;
     height: 300px;
     background-color: black;
     border: 2px solid white;
-    padding: 2px;
     text-align: center;
     margin: 10px;
 }
@@ -130,40 +142,135 @@ h3{
     margin-top: 10px;
 }
 
-.paraTi {
-    margin-left: 20px;
-}
 
-.masVendidos {
-    margin-left: 20px;
-}
 
+
+/* ---------------------final css para Productos para ti----------------------------- */
+/* ---------------------css para footer----------------------------- */
 footer {
-    display: inline-block;
+    display: flex;
+    justify-content: space-around;
     width: 100%;
     height: 200px;
     background-color: black;
-    margin-top: 20px;
+    margin-top: 20px;   
 }
 .infoFooter{
-    width: 120px;
-    float: left;
-    margin-top: 60px;
-    margin-left: 20px;
+    margin: auto 0px;
 }
-.redes {
-    display: inline-block;
-    margin: 0 auto;
-}
-
 .logoRedes {
-    display: grid;
-   width: 500px;
-    margin: 10px auto;
-
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 500px;
+}
+ .redes {
+    display: inline-block;
+}
+.navegacionFooter{
+    margin: auto 0;
 }
 
 .logoFooter {
     width: 140px;
     margin: 0 auto;
+}
+/* ---------------------css para footer----------------------------- */
+/* ---------------------css para categorias----------------------------- */
+.categoria {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+
+.buzos {
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    height: 620px;
+    background-image: url(/pic/buzo.jpeg);
+    background-position: center;
+    background-size: cover;
+    margin: 10px;
+    justify-content: center;
+    text-align: center;
+    font-size: 100px;
+}
+.btnVerCategoria{
+    width: 200px;
+    height: 50px;
+    margin: 0 auto;
+    background-color: rgba(0, 0, 0, 0.075);
+    border-radius: 6px;
+}
+.imgBuzo{
+    width: 500px;
+    height: 620px;
+}
+.conteinerCategoria1{
+    display: flex;
+    flex-direction: column;
+}
+.conteinerCategoria{
+    display: flex;
+    flex-direction: row;
+}
+.zapatillas{
+    display: flex;
+    flex-direction: column;
+    width: 820px;
+    height: 300px;
+    background-color: yellowgreen;
+    margin: 10px;
+    background-image: url(/pic/zapatillas.jpg);
+    background-position: center;
+    background-size: cover;
+    margin: 10px;
+    justify-content: center;
+    text-align: center;
+    font-size: 100px;
+}
+.imgZapas{
+    width: 820px;
+    height: 300px;
+}
+.cuellos{
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    height: 300px;
+    background-color: rgb(50, 187, 205);
+    margin: 10px;
+    background-image: url(/pic/cuellito.jpeg);
+    background-position: center;
+    background-size: cover;
+    margin: 10px;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    font-size: 50px;
+}
+.imgCuello{
+    width: 400px;
+    height: 300px;
+}
+.remeras{
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    height: 300px;
+    background-color: rgb(205, 50, 192);
+    margin: 10px;
+    background-image: url(/pic/remera.jpg);
+    background-position: center;
+    background-size: cover;
+    margin: 10px;
+    justify-content: center;
+    text-align: center;
+    font-size: 50px;
+}
+.imgSale{
+    width: 400px;
+    height: 300px;
 }
