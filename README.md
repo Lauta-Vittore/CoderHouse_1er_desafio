@@ -1,4 +1,4 @@
-# CoderHouse_1er_desafio
+# CoderHouse_desafios
 
 ALUMNO: Vittore Lautaro.
 
@@ -6,3 +6,5 @@ Primer desafío, en este desafío se debía generar un wireframe de una vista pa
 etiquetas semánticas vistas hasta ahora en clase.
 
 Para el proyecto realizaré una tienda online de indumentaria.
+
+Segundo desafío, agregar css aprendido al proyecto. 
