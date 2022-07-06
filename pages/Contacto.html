@@ -29,23 +29,34 @@
         
     
     </header>
-    <main>
-        <form>
-            <fieldset>
-                <legend>formulario de contacto</legend>
-                <label for="nombre">nombre</label>
-                <input id="nombre" type="text">
-                <br><br>
-                <label for="apellido">apellido </label>
-                <input id="apellido" type="text">
-                <br><br>
-                <label for="email">email</label>
-                <input id="email" type="email">
-                <br><br>
-                <input type="submit">
-                <input type="reset">
-        </fieldset>
-        </form>
+    <main class="contact">
+        <section class="formContacto">
+            <h1>Si quieres información sobre cualquiera de nuestros
+                productos o estás interesado en su distribución,
+                rellena nuestro formulario y nos pondremos en
+                contacto contigo lo antes posible.
+            </h1>
+            <form>
+                        <input id="nombre" type="text" placeholder="Nombre">
+                        <input id="email" type="email" placeholder="Email">
+                        <input id="telefono" type="number" placeholder="Teléfono">
+                        <input id="mensaje" type="text" placeholder="Mensaje">
+                        <button class="btnFormContacto">Enviar</button>
+            </form>
+           
+        </section>
+        <ul class="contactos">
+            <li>Sede central: xxxxxxxxxxxx</li>
+            <li>Teléfono: xxxxxxxxxxx</li>
+            <li>Administración : xxxxxxx@gmail.com</li>
+            <li>Mayorista: xxxxxx@gmail.com</li>
+        </ul>
+        <div class="suscribite">
+            <h3>SUMATE A NUESTRA COMUNIDAD</h3>
+            <h3>Suscribite, no te pierdas ninguna oferta</h3>
+            <input id="suscribite" type="email" placeholder="Ingresá tu email y suscribite">
+            <button class="btnSuscribirme">SUSCRIBIRME</button>
+        </div>
     </main>
     <footer>
         <ul class="infoFooter">
