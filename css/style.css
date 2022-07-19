@@ -130,6 +130,7 @@ a {
 .titulo{
     margin-left: 10px;
 }
+
 .paraTi {
     display: flex;
     justify-content: space-around;
@@ -143,10 +144,9 @@ a {
     overflow: hidden;
 }
 .conteinerProductos {
-    width: 300px;
-    height: 320px;
-    background-color: rgba(0, 0, 0, 0.11);
-    border: 2px solid white;
+    width: 33%;
+    height: 33%;
+    background-color: rgba(0, 0, 0, 0.068);
     text-align: center;
     margin: 10px;
 }
@@ -293,6 +293,9 @@ h1{
 .pregunta {
     border-radius: 20px;
 }
+.pregunta h2{
+    margin: 20px;
+}
 
 .preguntaNaranja {
     background-color: rgba(255, 166, 0, 0.678);
@@ -325,16 +328,27 @@ h1{
 }
 /* TERMINA CSS PARA PREGUNTAS FRECUENTES */
 /* CSS PARA CONTACTO */
-
+.conteinerContactos {
+    display: grid;
+    height: auto;
+    grid-template-columns: 70% 30%;
+    grid-template-rows: 30% 40% 30%;
+    grid-template-areas: 
+    "texto contacto"
+    "formulario contacto"
+    "suscribite contacto";
+}
 .formContacto {
-    display: flex;
-    flex-direction: column;
-    width: 50%;
+    grid-area: texto;
+    width: 100%;
     text-align: center;
+    margin: 0 auto;
 }
 .formContact{
-    width: 500px;
-    margin: 0 auto;
+    grid-area: formulario;
+    width: 90%;
+    margin: 3px auto;
+    text-align: center;
 }
 #nombre {
     width: 100%;
@@ -361,24 +375,22 @@ h1{
 .btnFormContacto {
     width: 50%;
     height: 45px;
-    margin: 20px 120px;
     background-color: orange;
     font-size: 20px;
+    margin: 10px;
 }
-.conteinerContactos {
-    display: flex;
-    flex-direction: row;
-}
+
 .contactos {
+    grid-area: contacto;
     background-image: url(../pic/img-contactanos.png);
     background-repeat: no-repeat;
     background-position: bottom;
-    background-size: 500px;
-    background-position-y: 300px;
+    background-size: 90%;
+    background-position-y: 400px;
     background-color: rgba(255, 166, 0, 0.651);
     margin: auto 0 auto auto;
     font-size: 20px;
-    width: 40%;
+    width: 100%;
     height: 600px;
     text-align: center;
 }
@@ -387,31 +399,32 @@ h1{
     list-style:none;
 }
 .suscribite {
+    grid-area: suscribite;
     width: 100%;
     text-align: center;
     margin: 0 auto;
-    padding: 50px;
 }
 .suscribite h3{
     margin-bottom: 10px;
 }
 #suscribite{
-    width: 500px;
+    width: 80%;
     height: 25px;
 }
 .btnSuscribirme{
-    width: 120px;
+    width: 20%;
     height: 30px;
     background-color: orange;
     margin-top: 10px;
+    overflow: hidden;
 }
 
 /*  TERMINA CSS PARA CONTACTO */
 /* CSS PARA PRODUCTOS */
 
 .conteinerPagProductos {
-    width: 400px;
-    height: 400px;
+    width: 33%;
+    height: 33%;
     background-color: rgba(0, 0, 0, 0.068);
     text-align: center;
     margin: 10px;
@@ -422,6 +435,9 @@ h1{
     width: 100%;
     text-align: center;
     background-color: white;
+}
+.imgSobreNosotros{
+    width: 90%;
 }
 
 
@@ -492,7 +508,58 @@ h1{
     }
     /* productos */
     .seccionProductos{
-        flex-direction: column;
-        margin: 0 auto;
+        width: 100%;
+        flex-direction: column;  
     }
+    .conteinerPagProductos{
+        margin: 10px auto;
+        width: 80%;
+    }
+    .conteinerPagProductos h3{
+        font-size: 80%;
+    }
+    
+    /* contacto */
+    .conteinerContactos {
+        grid-template-columns: 100%;
+        grid-template-rows: 10% 30% 25% 10% 20%;
+        grid-template-areas: 
+        "texto"
+        "formulario"
+        "suscribite"
+        " contacto"
+        " contacto";
+        overflow: hidden;
+    }
+    .contactos{
+        width: 100%;
+        background-image: none;
+    }
+    .formContacto h1{
+        font-size: 15px;
+        margin: 10px;
+    }
+    #nombre{
+        width: 80%;
+        height: 30px;
+    }
+    #email{
+        width: 80%;
+        height: 30px;
+    }
+    #telefono{
+        width: 80%;
+        height: 30px;
+    }
+    #mensaje{
+        width: 80%;
+        height: 30px;
+    }
+    /* preguntas frecuentes */
+    .conteinerPregunta{
+        display: flex;
+        flex-direction: column;
+        height: auto;
+    }
+    
 }
