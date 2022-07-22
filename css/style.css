@@ -204,6 +204,9 @@ footer {
     font-size: 100px;
     overflow: hidden;
 }
+.buzos:hover{
+    opacity: 0.8;
+}
 .btnVerCategoria{
     width: 200px;
     height: 50px;
@@ -225,7 +228,9 @@ footer {
     font-size: 100px;
     overflow: hidden;
 }
-
+.zapatillas:hover{
+    opacity: 0.8;
+}
 .cuellos{
     grid-area: cuellos;
     background-color: rgb(50, 187, 205);
@@ -240,7 +245,9 @@ footer {
     font-size: 50px;
     overflow: hidden;
 }
-
+.cuellos:hover{
+    opacity: 0.8;
+}
 .remeras{
     grid-area: remeras;
     background-color: rgb(205, 50, 192);
@@ -254,7 +261,9 @@ footer {
     font-size: 50px;
     overflow: hidden;
 }
-
+.remeras:hover{
+    opacity: 0.8;
+}
 
 /* CSS PARA PREGUNTAS FRECUENTES */
 h1{
