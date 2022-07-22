@@ -67,13 +67,45 @@
                         <input id="email" type="email" placeholder="Email">
                         <input id="telefono" type="number" placeholder="Teléfono">
                         <input id="mensaje" type="text" placeholder="Mensaje">
-                        <button class="btnFormContacto">Enviar</button>
+                        <div class="modal fade" id="exampleModalToggle" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+                            <div class="modal-dialog modal-dialog-centered">
+                              <div class="modal-content">
+                                <div class="modal-header">
+                                  <h5 class="modal-title" id="exampleModalToggleLabel">Gracias por tu mensaje!</h5>
+                                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                  Nos contactaremos contigo lo antes posible.
+                                </div>
+                                <div class="modal-footer">
+                                  <button class="btn btn-primary" data-bs-target="#exampleModalToggle2" data-bs-toggle="modal">Cerrar</button>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <a class="btn btn-primary btnFormContacto" data-bs-toggle="modal" href="#exampleModalToggle" role="button">Enviar</a>
             </form>
             <div class="suscribite">
                 <h3>SUMATE A NUESTRA COMUNIDAD</h3>
                 <h3>Suscribite, no te pierdas ninguna oferta</h3>
                 <input id="suscribite" type="email" placeholder="Ingresá tu email y suscribite">
-                <button class="btnSuscribirme">SUSCRIBIRME</button>
+                <div class="modal fade" id="exampleModalToggle1" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+                    <div class="modal-dialog modal-dialog-centered">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h5 class="modal-title" id="exampleModalToggleLabel">Gracias por tu suscripción!</h5>
+                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                          Ahora cada vez que haya una oferta te llegará un mensaje al correo ingresado.
+                        </div>
+                        <div class="modal-footer">
+                          <button class="btn btn-primary" data-bs-target="#exampleModalToggle2" data-bs-toggle="modal">Cerrar</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <a class="btn btnSuscribirme" data-bs-toggle="modal" href="#exampleModalToggle1" role="button">SUSCRIBIRME</a>
             </div>
             
         
