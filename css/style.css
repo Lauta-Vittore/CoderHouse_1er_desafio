@@ -8,66 +8,50 @@ body {
     width: 100%;
 }
 /* --------------------css para la navbar--------------------- */
-header{
-    display: flex;
-    flex-direction: row;
+
+.navbar{
     background-image: linear-gradient(to right, orange, black);
-    width: 100%;
-    height: 100px;
-    justify-content: space-evenly;
 }
+/* .logoNav{
+    margin: auto 0;
+} */
 .name{
     font-family: 'Cedarville Cursive', cursive;
     font-size: 50px;
-    text-align: center;
-    margin: 0 auto;
-
+    margin-left: 50px;
+    color: black;
 }
-
-.img {
-    width: 100px;
+.navbar-nav a{
+    color: white;
 }
-
-.menu {
-    width: 70%;
-    margin: auto 0;
-    text-align: center;
-}
-.buscar{
+.collapse{
+    color: white;
+    margin-left: 50px;
     margin-top: 10px;
-    height: 25px;
-    width: 50%;
-    justify-content: center;
-}
-
-.btn {
-    background-color: darkorange;
-    width: 90px;
-    height: 35px;
-}
-.navegacion {
-    text-align: center;
-}
-.inicio{
-    display: inline-block;
-    margin: 10px 10px;
-}
-.cuenta{
-    margin: auto 0;
-    width: 20%;
-    text-align: center;
 }
 .btnCuenta{
     width: 100px;
-    height: 30px;
+    height: 40px;
     background-color: orange;
     border: 2px solid rgba(255, 68, 0, 0.575);
+    border-radius: 7px;
+    font-size: 19px;
+}
+.cuenta{
+    text-align: center;
+}
+.conteiner ul{
+    justify-content: center;
+}
+.navbar-toggler{
+    margin-right: 50px;
 }
 .btnCarrito{
     width: 30px;
-    height: 30px;
+    height: 40px;
     background-color: orange;
     border: 2px solid rgba(255, 68, 0, 0.575);
+    border-radius: 7px;
     margin-left: 5px;
 }
 .imgCarrito {
@@ -75,39 +59,17 @@ header{
     height: 16px;
     margin: 0 auto;
 }
-
+.dropdown-menu a{
+    color: black;
+}
 a {
     color: white;
     text-decoration: none;
 }
-/* --------------------termina css para la navbar--------------------- */
-/* ---------------------css para carusel----------------------------- */
+a:hover{
+    color: black;
+} 
 
-.carrusel{
-    display: flex;
-    justify-content: space-evenly;
-    height: 500px;
-    background-color: rgba(212, 212, 212, 0.801);
-    margin: 20px;
-}
-
-.imgCarrusel {
-    width: 95%;
-}
-
-.whatsapp{
-    display: flex;
-    justify-content: right;
-    margin-right: 20px;
-    
-}
-.wpp{
-    width: 40px;
-    height: 40px;
-    position: fixed;
-    border-radius: 20px;
-}
-/* ---------------------termina css para carusel----------------------------- */
 /* ---------------------css para infoCompras----------------------------- */
 
 .infoCompra{
@@ -165,18 +127,16 @@ a {
     overflow: hidden;
 }
 .conteinerProductos:hover {
-    background-color: black;
     height: 40%;
     width: 40%;
     color: white;
+    border-right-style: outset;
+    border-bottom-style:outset ;
 }
 .conteinerProductos a{
     margin-top: 10px;
     color: black;
-}
-.conteinerProductos a:hover{
-    margin-top: 10px;
-    color: white;
+    
 }
 h3{
     margin: 10px;
@@ -228,7 +188,10 @@ footer {
     justify-content: center;
     width: 100%;
 }
-
+.tipoCategoria{
+    font-size: 70px;
+    text-align: center;
+}
 
 .buzos {
     grid-area: buzo;
@@ -238,14 +201,16 @@ footer {
     margin: 10px;
     justify-content: center;
     text-align: center;
-    font-size: 80px;
+    font-size: 100px;
+    overflow: hidden;
 }
 .btnVerCategoria{
     width: 200px;
     height: 50px;
-    margin: 0 auto;
     background-color: rgba(0, 0, 0, 0.075);
     border-radius: 6px;
+    overflow: hidden;
+    font-size: 20px;
 }
 
 .zapatillas{
@@ -255,10 +220,10 @@ footer {
     background-image: url(/pic/zapatillas.jpg);
     background-position: center;
     background-size: cover;
-    margin: 10px;
     justify-content: center;
     text-align: center;
     font-size: 100px;
+    overflow: hidden;
 }
 
 .cuellos{
@@ -273,6 +238,7 @@ footer {
     text-align: center;
     color: white;
     font-size: 50px;
+    overflow: hidden;
 }
 
 .remeras{
@@ -286,6 +252,7 @@ footer {
     justify-content: center;
     text-align: center;
     font-size: 50px;
+    overflow: hidden;
 }
 
 
@@ -481,6 +448,9 @@ h1{
         font-size: 13px;
         margin-left: 1px;
     }
+    .name{
+        font-size: 25px;
+    }
     .buscar{
         width: 100%;
     }
@@ -488,9 +458,6 @@ h1{
         display: none;
     }
     .btn {
-        display: none;
-    }
-    .btnCuenta{
         display: none;
     }
     .carrusel{
@@ -522,14 +489,13 @@ h1{
     }
     .categoria {
         display: grid;
-        height: 600px;
+        height: 700px;
         grid-template-columns: 50% 50%;
         grid-template-rows: 33% 33% 33% ;
         grid-template-areas: 
         "buzo cuellos"
         "buzo remeras"
         "zapatillas zapatillas";
-        justify-content: center;
         width: 100%;
     }
     .tipoCategoria{
@@ -539,7 +505,7 @@ h1{
     .btnVerCategoria{
         width: 50%;
         height: 30px;
-        font-size: 10px;
+        font-size: 15px;
     }
     /* productos */
     .seccionProductos{
