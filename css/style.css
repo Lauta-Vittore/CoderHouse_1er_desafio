@@ -471,7 +471,8 @@ h1{
     }
     .infoCompra{
         width: 90%;
-        margin: 0 auto;
+        height: auto;
+        margin: 20px auto;
     }
     .btnCompra{
         font-size: small;
