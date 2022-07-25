@@ -152,27 +152,34 @@ footer {
     justify-content: space-around;
     width: 100%;
     height: 200px;
-    background-color: black;
+    background-image: linear-gradient(to right, orange, black);
+    
        
 }
 .infoFooter{
     margin: auto 0px;
+    list-style:none
 }
 .logoRedes {
     display: flex;
     flex-direction: column;
     text-align: center;
     width: 500px;
+    justify-content: center;
 }
  .redes {
     display: inline-block;
 }
 .navegacionFooter{
     margin: auto 0;
+    list-style:none
 }
 
 .logoFooter {
     width: 140px;
+    margin: 0 auto;
+}
+.logoName{
     margin: 0 auto;
 }
 /* ---------------------css para footer----------------------------- */
@@ -275,20 +282,10 @@ h1{
     background-repeat: no-repeat;
     background-position: center;
 }
-.conteinerPregunta{
-    display: grid;
-    grid-template-columns: 50% 50%;
-    grid-template-rows: 100px 100px 100px 100px;
-    column-gap: 30px;
-    row-gap: 30px;
-    height: 500px;
-    justify-items: baseline;
-    margin: 50px;
-    
-}
 
 .pregunta {
     border-radius: 20px;
+    height: auto;
 }
 .pregunta h2{
     margin: 20px;
@@ -296,17 +293,25 @@ h1{
 
 .preguntaNaranja {
     background-color: rgba(255, 166, 0, 0.678);
-    width: 100%;
+    width: 90%;
+    margin: 0 auto;
     
 }
 .preguntaNegro {
     background-color: rgba(136, 88, 0, 0.685);
     color: rgb(255, 255, 255);
-    width: 100%;
+    width: 80%;
+    margin: 0 auto;
 }
 .pregunta h2 {
     text-align: center;
     margin-top: 35px;
+}
+.respuesta{
+    margin: 0 auto;
+    width: 50%;
+    background-color: orange;
+    border-radius: 20px;
 }
 .contactar{
     display: flex;
@@ -569,10 +574,5 @@ h1{
         height: 30px;
     }
     /* preguntas frecuentes */
-    .conteinerPregunta{
-        display: flex;
-        flex-direction: column;
-        height: auto;
-    }
     
 }
