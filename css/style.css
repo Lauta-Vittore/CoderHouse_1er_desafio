@@ -202,7 +202,7 @@ footer {
 
 .buzos {
     grid-area: buzo;
-    background-image: url(/pic/buzo.jpeg);
+    background-image: url(../pic/buzo.jpeg);
     background-position: center;
     background-size: cover;
     margin: 10px;
@@ -227,7 +227,7 @@ footer {
     grid-area: zapatillas;
     background-color: yellowgreen;
     margin: 10px;
-    background-image: url(/pic/zapatillas.jpg);
+    background-image: url(../pic/zapatillas.jpg);
     background-position: center;
     background-size: cover;
     justify-content: center;
@@ -242,7 +242,7 @@ footer {
     grid-area: cuellos;
     background-color: rgb(50, 187, 205);
     margin: 10px;
-    background-image: url(/pic/cuellito.jpeg);
+    background-image: url(../pic/cuellito.jpeg);
     background-position: center;
     background-size: cover;
     margin: 10px;
@@ -259,7 +259,7 @@ footer {
     grid-area: remeras;
     background-color: rgb(205, 50, 192);
     margin: 10px;
-    background-image: url(/pic/remera.jpg);
+    background-image: url(../pic/remera.jpg);
     background-position: center;
     background-size: cover;
     margin: 10px;
