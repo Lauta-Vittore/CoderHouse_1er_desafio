@@ -8,9 +8,12 @@ body {
     width: 100%;
 }
 /* --------------------css para la navbar--------------------- */
-
+.row{
+    width: 100%;
+    margin: 0;
+}
 .navbar{
-    background-image: linear-gradient(to right, orange, black);
+        background-image: linear-gradient(to right, orange, black);
 }
 /* .logoNav{
     margin: auto 0;
@@ -112,34 +115,16 @@ a:hover{
     width: 100%;
     overflow: hidden;
 }
-.conteinerProductos {
-    width: 33%;
-    height: 33%;
-    background-color: rgba(0, 0, 0, 0.068);
-    text-align: center;
-    margin: 10px;
-    transition: all 0.2s;
-}
+
 .seccionProductos{
     display: flex;
     justify-content: space-around;
     width: 100%;
     overflow: hidden;
 }
-.conteinerProductos:hover {
-    height: 40%;
-    width: 40%;
-    color: white;
-    border-right-style: outset;
-    border-bottom-style:outset ;
-}
-.conteinerProductos a{
-    margin-top: 10px;
-    color: black;
-    
-}
+
 h3{
-    margin: 10px;
+    margin: 5px;
 }
 
 
@@ -175,10 +160,6 @@ footer {
     list-style:none
 }
 
-.logoFooter {
-    width: 140px;
-    margin: 0 auto;
-}
 .logoName{
     margin: 0 auto;
 }
@@ -527,6 +508,9 @@ h1{
 
 
 @media(max-width:768px){
+    body{
+        width: 100%;
+    }
     .inicio{
         font-size: 13px;
         margin-left: 1px;
@@ -543,19 +527,13 @@ h1{
     .btn {
         display: none;
     }
-    .carrusel{
-        width: 90%;
-        height: 250px;
-        margin: 20px auto;
-    }
-    .imgCarrusel{
-        width: 100%;
-        height: 100%;
-    }
     .infoCompra{
-        width: 90%;
+        width: 100%;
         height: auto;
         margin: 20px auto;
+    }
+    .carousel{
+        width: 100%;
     }
     .btnCompra{
         font-size: small;
