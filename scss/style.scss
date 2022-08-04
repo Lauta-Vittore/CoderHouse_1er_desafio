@@ -1,3 +1,48 @@
-body{
-    background-color: red;
+@import "variables";
+*{
+    padding: 0;
+    margin: 0;
 }
+body{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: rgba(212, 212, 212, 0.801);
+    width: 100%;
+    a {
+        color: white;
+        text-decoration: none;
+    }
+    a:hover{
+        color: black;
+    }
+}
+@import "nav";
+@import "infoCompras";
+@import "categorias";
+.paraTi{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    overflow: hidden;
+    @import "cardProducto";
+}
+/* pagina productos */
+.titulo2{
+    position: static;
+    text-align: center;
+    font-size: 60px;
+    font-weight: 600;
+    font-family: 'Cedarville Cursive', cursive;
+    margin: 20px;
+}
+
+.seccionProductos{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    overflow: hidden;
+    h3{
+        margin: 5px;
+    }
+    @import "cardProducto";
+}
+@import "footer";

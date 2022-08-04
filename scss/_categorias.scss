@@ -1,0 +1,89 @@
+/* css para categorias */
+main{
+    .categoria {
+        display: grid;
+        height: 600px;
+        grid-template-columns: 33% 33% 33%;
+        grid-template-rows: 50% 50%;
+        grid-template-areas: 
+        "buzo zapatillas zapatillas"
+        "buzo cuellos remeras";
+        justify-content: center;
+        width: 100%;
+        .buzos {
+            grid-area: buzo;
+            background-image: url(../pic/buzo.jpeg);
+            background-position: center;
+            background-size: cover;
+            margin: 10px;
+            justify-content: center;
+            text-align: center;
+            font-size: 100px;
+            overflow: hidden;
+        }
+        .buzos:hover{
+            opacity: 0.8;
+        }
+        .zapatillas{
+            grid-area: zapatillas;
+            background-color: yellowgreen;
+            margin: 10px;
+            background-image: url(../pic/zapatillas.jpg);
+            background-position: center;
+            background-size: cover;
+            justify-content: center;
+            text-align: center;
+            font-size: 100px;
+            overflow: hidden;
+        }
+        .zapatillas:hover{
+            opacity: 0.8;
+        }
+        .cuellos{
+            grid-area: cuellos;
+            background-color: rgb(50, 187, 205);
+            margin: 10px;
+            background-image: url(../pic/cuellito.jpeg);
+            background-position: center;
+            background-size: cover;
+            margin: 10px;
+            justify-content: center;
+            text-align: center;
+            color: white;
+            font-size: 50px;
+            overflow: hidden;
+        }
+        .cuellos:hover{
+            opacity: 0.8;
+        }
+        .remeras{
+            grid-area: remeras;
+            background-color: rgb(205, 50, 192);
+            margin: 10px;
+            background-image: url(../pic/remera.jpg);
+            background-position: center;
+            background-size: cover;
+            margin: 10px;
+            justify-content: center;
+            text-align: center;
+            font-size: 50px;
+            overflow: hidden;
+        }
+        .remeras:hover{
+            opacity: 0.8;
+        }
+        .btnVerCategoria{
+            width: 200px;
+            height: 50px;
+            background-color: rgba(0, 0, 0, 0.075);
+            border-radius: 6px;
+            overflow: hidden;
+            font-size: 20px;
+        }
+        .tipoCategoria{
+            font-size: 70px;
+            text-align: center;
+        }
+    }
+}
+/* termina css para categorias */

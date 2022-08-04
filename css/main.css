@@ -1,2 +1,359 @@
+* {
+  padding: 0;
+  margin: 0; }
+
 body {
-  background-color: red; }
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  background-color: rgba(212, 212, 212, 0.801);
+  width: 100%; }
+  body a {
+    color: white;
+    text-decoration: none; }
+  body a:hover {
+    color: black; }
+
+/* css para nav */
+.row {
+  width: 100%;
+  margin: 0; }
+  .row .navbar {
+    background-image: linear-gradient(to right, orange, black); }
+    .row .navbar a {
+      color: white;
+      text-decoration: none; }
+    .row .navbar a:hover {
+      color: black; }
+    .row .navbar .name {
+      font-family: 'Cedarville Cursive', cursive;
+      font-size: 50px;
+      margin-left: 50px;
+      color: black; }
+    .row .navbar .navbar-toggler {
+      margin-right: 50px; }
+    .row .navbar .collapse {
+      color: white;
+      margin-left: 50px;
+      margin-top: 10px; }
+      .row .navbar .collapse .conteiner ul {
+        justify-content: center; }
+      .row .navbar .collapse .conteiner .btnCuenta {
+        width: 100px;
+        height: 40px;
+        background-color: orange;
+        border: 2px solid rgba(255, 68, 0, 0.575);
+        border-radius: 7px;
+        font-size: 19px; }
+      .row .navbar .collapse .conteiner .navbar-nav a {
+        color: white; }
+      .row .navbar .collapse .conteiner .navbar-nav .dropdown-menu a {
+        color: black; }
+      .row .navbar .collapse .cuenta {
+        text-align: center; }
+        .row .navbar .collapse .cuenta .btnCuenta {
+          width: 100px;
+          height: 40px;
+          background-color: orange;
+          border: 2px solid rgba(255, 68, 0, 0.575);
+          border-radius: 7px;
+          font-size: 19px; }
+        .row .navbar .collapse .cuenta .btnCarrito {
+          width: 30px;
+          height: 40px;
+          background-color: orange;
+          border: 2px solid rgba(255, 68, 0, 0.575);
+          border-radius: 7px;
+          margin-left: 5px; }
+          .row .navbar .collapse .cuenta .btnCarrito .imgCarrito {
+            width: 16px;
+            height: 16px;
+            margin: 0 auto; }
+
+/* termina css para nav */
+/* css info compras */
+main .infoCompra {
+  display: flex;
+  justify-content: space-around;
+  height: 150px;
+  margin-top: 30px; }
+  main .infoCompra .btnCompra {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 120px;
+    width: 33%;
+    font-size: 25px;
+    font-weight: bold;
+    color: black;
+    background-color: rgba(255, 254, 253, 0.712);
+    border: 2px solid black; }
+
+/* termina css info compras */
+/* css para categorias */
+main .categoria {
+  display: grid;
+  height: 600px;
+  grid-template-columns: 33% 33% 33%;
+  grid-template-rows: 50% 50%;
+  grid-template-areas: "buzo zapatillas zapatillas" "buzo cuellos remeras";
+  justify-content: center;
+  width: 100%; }
+  main .categoria .buzos {
+    grid-area: buzo;
+    background-image: url(../pic/buzo.jpeg);
+    background-position: center;
+    background-size: cover;
+    margin: 10px;
+    justify-content: center;
+    text-align: center;
+    font-size: 100px;
+    overflow: hidden; }
+  main .categoria .buzos:hover {
+    opacity: 0.8; }
+  main .categoria .zapatillas {
+    grid-area: zapatillas;
+    background-color: yellowgreen;
+    margin: 10px;
+    background-image: url(../pic/zapatillas.jpg);
+    background-position: center;
+    background-size: cover;
+    justify-content: center;
+    text-align: center;
+    font-size: 100px;
+    overflow: hidden; }
+  main .categoria .zapatillas:hover {
+    opacity: 0.8; }
+  main .categoria .cuellos {
+    grid-area: cuellos;
+    background-color: #32bbcd;
+    margin: 10px;
+    background-image: url(../pic/cuellito.jpeg);
+    background-position: center;
+    background-size: cover;
+    margin: 10px;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    font-size: 50px;
+    overflow: hidden; }
+  main .categoria .cuellos:hover {
+    opacity: 0.8; }
+  main .categoria .remeras {
+    grid-area: remeras;
+    background-color: #cd32c0;
+    margin: 10px;
+    background-image: url(../pic/remera.jpg);
+    background-position: center;
+    background-size: cover;
+    margin: 10px;
+    justify-content: center;
+    text-align: center;
+    font-size: 50px;
+    overflow: hidden; }
+  main .categoria .remeras:hover {
+    opacity: 0.8; }
+  main .categoria .btnVerCategoria {
+    width: 200px;
+    height: 50px;
+    background-color: rgba(0, 0, 0, 0.075);
+    border-radius: 6px;
+    overflow: hidden;
+    font-size: 20px; }
+  main .categoria .tipoCategoria {
+    font-size: 70px;
+    text-align: center; }
+
+/* termina css para categorias */
+.paraTi {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  overflow: hidden; }
+  .paraTi .card {
+    width: 30%;
+    overflow: hidden;
+    margin-bottom: 10px; }
+    .paraTi .card .conteinerImg {
+      overflow: hidden; }
+      .paraTi .card .conteinerImg .imgProducto {
+        width: 100%;
+        transition: 0.5s; }
+      .paraTi .card .conteinerImg .action {
+        position: absolute;
+        top: 10px;
+        right: 10px; }
+        .paraTi .card .conteinerImg .action li {
+          position: relative;
+          list-style: none;
+          width: 40px;
+          height: 40px;
+          background: white;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          margin: 4px;
+          cursor: pointer;
+          opacity: 0;
+          transition: 0.5s; }
+          .paraTi .card .conteinerImg .action li span {
+            position: absolute;
+            right: 50px;
+            top: 50%;
+            transform: translateY(-50%);
+            white-space: nowrap;
+            padding: 4px 60px;
+            background-color: white;
+            color: #333;
+            font-weight: 500;
+            font-size: 12px;
+            border-radius: 4px;
+            pointer-events: none;
+            opacity: 0;
+            transition: 0.5s; }
+        .paraTi .card .conteinerImg .action li:hover {
+          background-color: red;
+          color: white; }
+          .paraTi .card .conteinerImg .action li:hover span {
+            opacity: 1; }
+    .paraTi .card .btnVerProducto {
+      background-image: linear-gradient(to right, orange, #ff8800);
+      border-radius: 6px;
+      color: white;
+      font-weight: 700;
+      width: 60%;
+      height: 35px;
+      transition: 0.1s;
+      float: right;
+      font-size: 15px; }
+    .paraTi .card .btnVerProducto:hover {
+      background-image: linear-gradient(to right, black, orange); }
+    .paraTi .card .precio {
+      margin-left: 10px;
+      color: #3b3b3b; }
+    .paraTi .card .card-text {
+      margin-left: 2px;
+      margin-bottom: 20px;
+      font-size: 15px;
+      font-weight: 600; }
+  .paraTi .card:hover .imgProducto {
+    transform: scale(1.5); }
+  .paraTi .card:hover .action li {
+    opacity: 1; }
+
+/* pagina productos */
+.titulo2 {
+  position: static;
+  text-align: center;
+  font-size: 60px;
+  font-weight: 600;
+  font-family: 'Cedarville Cursive', cursive;
+  margin: 20px; }
+
+.seccionProductos {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  overflow: hidden; }
+  .seccionProductos h3 {
+    margin: 5px; }
+  .seccionProductos .card {
+    width: 30%;
+    overflow: hidden;
+    margin-bottom: 10px; }
+    .seccionProductos .card .conteinerImg {
+      overflow: hidden; }
+      .seccionProductos .card .conteinerImg .imgProducto {
+        width: 100%;
+        transition: 0.5s; }
+      .seccionProductos .card .conteinerImg .action {
+        position: absolute;
+        top: 10px;
+        right: 10px; }
+        .seccionProductos .card .conteinerImg .action li {
+          position: relative;
+          list-style: none;
+          width: 40px;
+          height: 40px;
+          background: white;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          margin: 4px;
+          cursor: pointer;
+          opacity: 0;
+          transition: 0.5s; }
+          .seccionProductos .card .conteinerImg .action li span {
+            position: absolute;
+            right: 50px;
+            top: 50%;
+            transform: translateY(-50%);
+            white-space: nowrap;
+            padding: 4px 60px;
+            background-color: white;
+            color: #333;
+            font-weight: 500;
+            font-size: 12px;
+            border-radius: 4px;
+            pointer-events: none;
+            opacity: 0;
+            transition: 0.5s; }
+        .seccionProductos .card .conteinerImg .action li:hover {
+          background-color: red;
+          color: white; }
+          .seccionProductos .card .conteinerImg .action li:hover span {
+            opacity: 1; }
+    .seccionProductos .card .btnVerProducto {
+      background-image: linear-gradient(to right, orange, #ff8800);
+      border-radius: 6px;
+      color: white;
+      font-weight: 700;
+      width: 60%;
+      height: 35px;
+      transition: 0.1s;
+      float: right;
+      font-size: 15px; }
+    .seccionProductos .card .btnVerProducto:hover {
+      background-image: linear-gradient(to right, black, orange); }
+    .seccionProductos .card .precio {
+      margin-left: 10px;
+      color: #3b3b3b; }
+    .seccionProductos .card .card-text {
+      margin-left: 2px;
+      margin-bottom: 20px;
+      font-size: 15px;
+      font-weight: 600; }
+  .seccionProductos .card:hover .imgProducto {
+    transform: scale(1.5); }
+  .seccionProductos .card:hover .action li {
+    opacity: 1; }
+
+/* css footer */
+footer {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  height: 200px;
+  background-image: linear-gradient(to right, orange, black); }
+  footer .infoFooter {
+    margin: auto 0px;
+    list-style: none; }
+  footer .logoRedes {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 500px;
+    justify-content: center; }
+    footer .logoRedes .name {
+      font-family: 'Cedarville Cursive', cursive;
+      font-size: 50px;
+      margin-left: 50px;
+      color: black; }
+    footer .logoRedes .logoName {
+      margin: 0 auto; }
+    footer .logoRedes .redes {
+      display: inline-block; }
+  footer .navegacionFooter {
+    margin: auto 0;
+    list-style: none; }
+
+/* termina css footer */
