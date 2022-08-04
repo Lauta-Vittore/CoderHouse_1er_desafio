@@ -249,6 +249,7 @@ main .categoria {
   font-family: 'Cedarville Cursive', cursive;
   margin: 20px; }
 
+/* pag productos */
 .seccionProductos {
   display: flex;
   justify-content: space-around;
@@ -327,6 +328,148 @@ main .categoria {
   .seccionProductos .card:hover .action li {
     opacity: 1; }
 
+/* fin pag productos */
+/* pag contactos */
+.conteinerContactos {
+  display: grid;
+  height: auto;
+  grid-template-columns: 70% 30%;
+  grid-template-rows: 30% 40% 30%;
+  grid-template-areas: "texto contacto" "formulario contacto" "suscribite contacto"; }
+  .conteinerContactos .formContacto {
+    grid-area: texto;
+    width: 100%;
+    text-align: center;
+    margin: 0 auto; }
+    .conteinerContactos .formContacto h1 {
+      margin-top: 50px;
+      font-size: 25px; }
+  .conteinerContactos .formContact {
+    grid-area: formulario;
+    width: 90%;
+    margin: 3px auto;
+    text-align: center; }
+    .conteinerContactos .formContact #nombre {
+      width: 100%;
+      height: 45px;
+      font-size: 25px; }
+    .conteinerContactos .formContact #email {
+      width: 50%;
+      height: 35px;
+      font-size: 25px; }
+    .conteinerContactos .formContact #telefono {
+      width: 40%;
+      height: 35px;
+      font-size: 25px;
+      margin: 10px; }
+    .conteinerContactos .formContact #mensaje {
+      width: 100%;
+      height: 45px;
+      font-size: 25px; }
+    .conteinerContactos .formContact .btnFormContacto {
+      width: 25%;
+      height: 45px;
+      background-color: orange;
+      border-radius: 10px;
+      color: white;
+      font-size: 20px;
+      margin: 10px; }
+  .conteinerContactos .suscribite {
+    grid-area: suscribite;
+    width: 100%;
+    text-align: center;
+    margin: 0 auto; }
+    .conteinerContactos .suscribite h3 {
+      margin-bottom: 10px; }
+    .conteinerContactos .suscribite #suscribite {
+      width: 80%;
+      height: 25px; }
+    .conteinerContactos .suscribite .btn2 {
+      width: 100px;
+      height: 30px;
+      background-color: orange;
+      margin-top: 10px;
+      overflow: hidden; }
+    .conteinerContactos .suscribite .btnFormContacto {
+      width: 25%;
+      height: 45px;
+      background-color: orange;
+      border-radius: 10px;
+      color: white;
+      font-size: 20px;
+      margin: 10px; }
+  .conteinerContactos .contactos {
+    grid-area: contacto;
+    /* background-image: url(../pic/img-contactanos.png); */
+    /*  background-repeat: no-repeat;
+        background-position: bottom;
+        background-size: 90%;
+        background-position-y: 400px; */
+    background-image: linear-gradient(to right, rgba(212, 212, 212, 0.801), orange);
+    margin: auto 0 auto auto;
+    font-size: 20px;
+    width: 100%;
+    height: 600px;
+    text-align: center;
+    color: white;
+    padding-top: 100px; }
+    .conteinerContactos .contactos .li {
+      margin-top: 30px;
+      list-style: none;
+      color: white; }
+
+/* fin pag contactos */
+/* pag preguntas frecuentes */
+.preguntasFrecuentes {
+  background-image: url(../pic/preguntas-frecuentes.png);
+  background-repeat: no-repeat;
+  background-position: center; }
+  .preguntasFrecuentes h1 {
+    margin: 15px;
+    font-size: 25px; }
+  .preguntasFrecuentes .pregunta {
+    border-radius: 20px;
+    height: auto; }
+    .preguntasFrecuentes .pregunta h2 {
+      margin: 20px;
+      text-align: center;
+      margin-top: 35px; }
+    .preguntasFrecuentes .pregunta .preguntaNaranja {
+      background-color: rgba(255, 166, 0, 0.678);
+      width: 90%;
+      margin: 0 auto; }
+    .preguntasFrecuentes .pregunta .preguntaNegro {
+      background-color: rgba(136, 88, 0, 0.685);
+      color: white;
+      width: 80%;
+      margin: 0 auto; }
+  .preguntasFrecuentes .respuesta {
+    margin: 0 auto;
+    width: 50%;
+    background-color: orange;
+    border-radius: 20px; }
+  .preguntasFrecuentes .contactar {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: center;
+    margin-top: 100px; }
+    .preguntasFrecuentes .contactar .btnContactar {
+      background-color: black;
+      color: white;
+      width: 100px;
+      height: 30px;
+      margin-left: 25px;
+      border-radius: 6px; }
+
+/* PAG SOBRE NOSOTROS */
+.sobreNosotros {
+  width: 100%;
+  text-align: center;
+  background-color: white; }
+  .sobreNosotros .imgSobreNosotros {
+    width: 90%; }
+
 /* css footer */
 footer {
   display: flex;
@@ -357,3 +500,33 @@ footer {
     list-style: none; }
 
 /* termina css footer */
+/* VISTA PARA MOVILE */
+@media (max-width: 768px) {
+  body {
+    width: 100%; }
+    body .carousel {
+      width: 100%; }
+    body .infoCompra .btnCompra {
+      font-size: small;
+      height: 90px;
+      margin: 0 auto; }
+    body .paraTi {
+      display: none; }
+    body .masVendidos {
+      display: none; }
+    body .titulo {
+      display: none; }
+    body .categoria {
+      display: grid;
+      height: 700px;
+      grid-template-columns: 50% 50%;
+      grid-template-rows: 33% 33% 33%;
+      grid-template-areas: "buzo cuellos" "buzo remeras" "zapatillas zapatillas";
+      width: 100%; }
+      body .categoria .tipoCategoria {
+        font-size: 50%;
+        margin-top: 10px; }
+      body .categoria .btnVerCategoria {
+        width: 50%;
+        height: 30px;
+        font-size: 15px; } }
