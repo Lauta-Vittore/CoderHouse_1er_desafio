@@ -4,3 +4,9 @@
     margin-left: 50px;
     color: black;
 }
+@media(max-width:768px){
+    .name{
+        font-size: 25px;
+        margin-left: 25px;
+    }
+}
