@@ -1,4 +1,8 @@
 @import "variables";
+@import "maps";
+@import "extend";
+@import "mixin";
+
 *{
     padding: 0;
     margin: 0;
@@ -8,7 +12,7 @@ body{
     background-color: rgba(212, 212, 212, 0.801);
     width: 100%;
     a {
-        color: white;
+        color: map-get($map: $estilo, $key: colorLetra);
         text-decoration: none;
     }
     a:hover{
@@ -94,13 +98,7 @@ body{
             font-size: 25px;
         }
         .btnFormContacto{
-            width: 200px;
-            height: 45px;
-            background-color: orange;
-            border-radius: 10px;
-            color: white;
-            font-size: 20px;
-            margin: 10px;
+            @extend .btnContactos
         }
     }
     .suscribite {
@@ -118,18 +116,12 @@ body{
         .btn2{
             width: 100px;
             height: 30px;
-            background-color: orange;
+            background-color: map-get($map: $estilo, $key: colorFondo );
             margin-top: 10px;
             overflow: hidden;
         }
         .btnFormContacto{
-            width: 200px;
-            height: 45px;
-            background-color: orange;
-            border-radius: 10px;
-            color: white;
-            font-size: 20px;
-            margin: 10px;
+            @extend .btnContactos
         }
     }
     .contactos {
@@ -145,12 +137,12 @@ body{
         width: 100%;
         height: 600px;
         text-align: center;
-        color: white;
+        color: map-get($map: $estilo, $key: colorLetra);
         padding-top: 100px;
         .li{
             margin-top: 30px;
             list-style:none;
-            color: white
+            color: map-get($map: $estilo, $key: colorLetra );
         }
     }
 }
@@ -174,22 +166,16 @@ body{
             margin-top: 35px;
         }
         .preguntaNaranja {
-            background-color: rgba(255, 166, 0, 0.678);
-            width: 90%;
-            margin: 0 auto;
-            
+            @include naranjaPregunta();
         }
         .preguntaNegro {
-            background-color: rgba(136, 88, 0, 0.685);
-            color: rgb(255, 255, 255);
-            width: 80%;
-            margin: 0 auto;
+            @include oscuraPregunta();
         }
     }
     .respuesta{
         margin: 0 auto;
         width: 50%;
-        background-color: orange;
+        background-color: map-get($map: $estilo, $key: colorFondo );
         border-radius: 20px;
     }
     .contactar{
@@ -200,7 +186,7 @@ body{
         margin-top:100px ;
         .btnContactar {
             background-color: black;
-            color: white;
+            color: map-get($map: $estilo, $key: colorLetra );
             width: 100px;
             height: 30px;
             margin-left: 25px;

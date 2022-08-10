@@ -1,3 +1,12 @@
+.btnContactos, .conteinerContactos .formContact .btnFormContacto, .conteinerContactos .suscribite .btnFormContacto {
+  width: 200px;
+  height: 45px;
+  background-color: orange;
+  border-radius: 10px;
+  color: white;
+  font-size: 20px;
+  margin: 10px; }
+
 * {
   padding: 0;
   margin: 0; }
@@ -370,14 +379,6 @@ main .categoria {
       width: 100%;
       height: 45px;
       font-size: 25px; }
-    .conteinerContactos .formContact .btnFormContacto {
-      width: 200px;
-      height: 45px;
-      background-color: orange;
-      border-radius: 10px;
-      color: white;
-      font-size: 20px;
-      margin: 10px; }
   .conteinerContactos .suscribite {
     grid-area: suscribite;
     width: 100%;
@@ -394,14 +395,6 @@ main .categoria {
       background-color: orange;
       margin-top: 10px;
       overflow: hidden; }
-    .conteinerContactos .suscribite .btnFormContacto {
-      width: 200px;
-      height: 45px;
-      background-color: orange;
-      border-radius: 10px;
-      color: white;
-      font-size: 20px;
-      margin: 10px; }
   .conteinerContactos .contactos {
     grid-area: contacto;
     /* background-image: url(../pic/img-contactanos.png); */
