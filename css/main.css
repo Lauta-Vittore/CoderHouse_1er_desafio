@@ -529,4 +529,9 @@ footer {
       body .categoria .btnVerCategoria {
         width: 50%;
         height: 30px;
-        font-size: 15px; } }
+        font-size: 15px; }
+  .seccionProductos {
+    flex-direction: column; }
+    .seccionProductos .card {
+      margin: 10px auto;
+      width: 80%; } }
