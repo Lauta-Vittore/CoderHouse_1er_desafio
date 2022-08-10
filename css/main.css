@@ -30,8 +30,8 @@ body {
       color: black; }
     @media (max-width: 768px) {
       .row .navbar .name {
-        font-size: 25px;
-        margin-left: 25px; } }
+        font-size: 35px;
+        margin-left: 20px; } }
     .row .navbar .navbar-toggler {
       margin-right: 50px; }
     .row .navbar .collapse {
@@ -497,8 +497,8 @@ footer {
       color: black; }
     @media (max-width: 768px) {
       footer .logoRedes .name {
-        font-size: 25px;
-        margin-left: 25px; } }
+        font-size: 35px;
+        margin-left: 20px; } }
     footer .logoRedes .logoName {
       margin: 0 auto; }
     footer .logoRedes .redes {
