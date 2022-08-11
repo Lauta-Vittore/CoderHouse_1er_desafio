@@ -1,6 +1,7 @@
 /* css para nav */
 .row{
     width: 100%;
+    height: 85px;
     margin: 0;
     .navbar{
         background-image: $color-nav-footer;
@@ -16,22 +17,12 @@
             margin-right: 50px;
         }
         .collapse{
-            color: white;
-            margin-right: 50px;
-            text-align: center;
+            color: white; 
             justify-content: right;
             width: 100%;
             .conteiner{
                 ul{
                     justify-content: center;
-                }
-                .btnCuenta{
-                    width: 100px;
-                    height: 40px;
-                    background-color: $color-primario;
-                    border: 2px solid $borde-boton;
-                    border-radius: 7px;
-                    font-size: 19px;
                 }
                 .navbar-nav{
                     a{
