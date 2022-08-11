@@ -24,7 +24,6 @@ body {
 /* css para nav */
 .row {
   width: 100%;
-  height: 85px;
   margin: 0; }
   .row .navbar {
     background-image: linear-gradient(to right, orange, orange, black); }
