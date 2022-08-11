@@ -94,7 +94,7 @@ body{
             font-size: 25px;
         }
         .btnFormContacto{
-            width: 25%;
+            width: 200px;
             height: 45px;
             background-color: orange;
             border-radius: 10px;
@@ -113,7 +113,7 @@ body{
         }
         #suscribite{
             width: 80%;
-            height: 25px;
+            height: 30px;
         }
         .btn2{
             width: 100px;
@@ -123,7 +123,7 @@ body{
             overflow: hidden;
         }
         .btnFormContacto{
-            width: 25%;
+            width: 200px;
             height: 45px;
             background-color: orange;
             border-radius: 10px;
@@ -274,5 +274,37 @@ body{
             width: 80%;
         }
     }
-
+    .conteinerContactos {
+        grid-template-columns: 100%;
+        grid-template-rows: 10% 30% 25% 10% 20%;
+        grid-template-areas: 
+        "texto"
+        "formulario"
+        "suscribite"
+        " contacto"
+        " contacto";
+        overflow: hidden;
+        .formContacto h1{
+            font-size: 15px;
+            margin: 10px;
+        }
+    }
+    .formContact{
+        #nombre{
+            width: 80%;
+            height: 30px;
+        }
+        #email{
+            width: 80%;
+            height: 30px;
+        }
+        #telefono{
+            width: 80%;
+            height: 30px;
+        }
+        #mensaje{
+            width: 80%;
+            height: 30px;
+        }
+    }
 }

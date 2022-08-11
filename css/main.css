@@ -371,7 +371,7 @@ main .categoria {
       height: 45px;
       font-size: 25px; }
     .conteinerContactos .formContact .btnFormContacto {
-      width: 25%;
+      width: 200px;
       height: 45px;
       background-color: orange;
       border-radius: 10px;
@@ -387,7 +387,7 @@ main .categoria {
       margin-bottom: 10px; }
     .conteinerContactos .suscribite #suscribite {
       width: 80%;
-      height: 25px; }
+      height: 30px; }
     .conteinerContactos .suscribite .btn2 {
       width: 100px;
       height: 30px;
@@ -395,7 +395,7 @@ main .categoria {
       margin-top: 10px;
       overflow: hidden; }
     .conteinerContactos .suscribite .btnFormContacto {
-      width: 25%;
+      width: 200px;
       height: 45px;
       background-color: orange;
       border-radius: 10px;
@@ -542,4 +542,24 @@ footer {
     flex-direction: column; }
     .seccionProductos .card {
       margin: 10px auto;
-      width: 80%; } }
+      width: 80%; }
+  .conteinerContactos {
+    grid-template-columns: 100%;
+    grid-template-rows: 10% 30% 25% 10% 20%;
+    grid-template-areas: "texto" "formulario" "suscribite" " contacto" " contacto";
+    overflow: hidden; }
+    .conteinerContactos .formContacto h1 {
+      font-size: 15px;
+      margin: 10px; }
+  .formContact #nombre {
+    width: 80%;
+    height: 30px; }
+  .formContact #email {
+    width: 80%;
+    height: 30px; }
+  .formContact #telefono {
+    width: 80%;
+    height: 30px; }
+  .formContact #mensaje {
+    width: 80%;
+    height: 30px; } }
