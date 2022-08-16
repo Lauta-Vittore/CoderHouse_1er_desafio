@@ -710,4 +710,11 @@ footer {
     .sobreNosotros .somos {
       margin: 15px auto; }
     .sobreNosotros .mapa {
-      width: 100%; } }
+      width: 100%; }
+  .infoCompra {
+    height: 200px; }
+    .infoCompra .btnCompra {
+      display: flex;
+      flex-direction: column; }
+      .infoCompra .btnCompra img {
+        display: none; } }

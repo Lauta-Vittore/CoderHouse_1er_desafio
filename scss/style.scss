@@ -381,4 +381,14 @@ body{
             width: 100%;
         }
     }
+    .infoCompra{
+        height: 200px;
+        .btnCompra {
+           display: flex;
+           flex-direction: column;
+            img{
+                display: none;
+            }
+        }        
+    }
 }
