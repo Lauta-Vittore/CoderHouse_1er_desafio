@@ -20,12 +20,17 @@
     <header class="row">
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
             <div class="container-fluid">
-              <a class="navbar-brand name col-3" href="#">Bukee</a>
+              <a class="navbar-brand name col-1" href="#">Bukee</a>
+              
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
               </button>
-              <div class="collapse navbar-collapse col_9" id="navbarScroll">
-                <div class="conteiner col-9">
+              <div class="collapse navbar-collapse col_3" id="navbarScroll">
+                <div class="conteinerBuscador col-6">
+                    <input type="text" placeholder="Buscar productos, Categoría, etc"><label for="#"><img src="pic/lupa.png" alt="" style="width: 17px;"></label>
+                </div>
+                <div class="conteiner col-6">
+                    
                     <ul class="navbar-nav me-auto my-2 my-lg-0 col" style="--bs-scroll-height: 100px;">
                     <li class="nav-item">
                         <a class="nav-link" aria-current="page" href="index.html">Inicio</a>
@@ -86,7 +91,7 @@
             <button class="btnCompra"><img src="pic/envio.png" alt="envio" width="40px"> Envíos a todo el país</button>
             <button class="btnCompra"><img src="pic/segura.png" alt="segura" width="40px"> Compra asegurada</button>
         </section>
-        <section class="categoria">
+        <section class="categoria" id="categorias">
             <div class="buzos">
                     <h4 class="tipoCategoria">BUZOS</h4>
                     <a href="pages/productos.html#buzos"><button class="btnVerCategoria">Ver categoria</button></a>
@@ -102,6 +107,10 @@
             <div class="remeras">
                 <h4 class="tipoCategoria">REMERAS</h4>
                 <a href="pages/productos.html#remeras"><button class="btnVerCategoria">Ver categoria</button></a>
+            </div>
+            <div class="accesorios">
+                <h4 class="tipoCategoria">ACCESORIOS</h4>
+                <a href="pages/productos.html#accesorios"><button class="btnVerCategoria">Ver categoria</button></a>
             </div>
              
             

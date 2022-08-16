@@ -2,12 +2,13 @@
 main{
     .categoria {
         display: grid;
-        height: 600px;
+        height: 800px;
         grid-template-columns: 33% 33% 33%;
-        grid-template-rows: 50% 50%;
+        grid-template-rows: 33% 33% 33%;
         grid-template-areas: 
         "buzo zapatillas zapatillas"
-        "buzo cuellos remeras";
+        "buzo cuellos remeras"
+        "accesorio accesorio accesorio";
         justify-content: center;
         width: 100%;
         .buzos {
@@ -70,6 +71,22 @@ main{
             overflow: hidden;
         }
         .remeras:hover{
+            opacity: 0.8;
+        }
+        .accesorios{
+            grid-area: accesorio;
+            background-color: rgb(205, 50, 192);
+            margin: 10px;
+            background-image: url(../pic/accesorioCategoria.jpg);
+            background-position: center;
+            background-size: cover;
+            margin: 10px;
+            justify-content: center;
+            text-align: center;
+            font-size: 50px;
+            overflow: hidden;
+        }
+        .accesorios:hover{
             opacity: 0.8;
         }
         .btnVerCategoria{

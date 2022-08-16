@@ -8,16 +8,20 @@ main{
         margin-top: 30px;
         .btnCompra {
             display: flex;
-            flex-direction: column;
+            flex-direction: row;
             justify-content: center;
             align-items: center;
-            height: 120px;
+            height: 100px;
             width: 33%;;
             font-size: 25px;
             font-weight: bold;
             color: rgb(0, 0, 0);
-            background-color: rgba(255, 254, 253, 0.712);
-            border: 2px solid rgb(0, 0, 0);
+            background-color: map-get($map: $estilo, $key: colorFondo );
+            border: 1px solid white;
+            border-radius: 20px;
+            img{
+                margin-right: 15px;
+            }
         }        
     }
     

@@ -9,6 +9,13 @@
                 width: 100%;
                 transition: 0.5s;
             }
+            .imgProducto1{
+                width: 100%;
+            }
+            .imgProducto2{
+                display: none;
+                width: 100%;
+            }
             .action{
                 position: absolute;
                 top: 10px;
@@ -81,6 +88,12 @@
     .card:hover{
         .imgProducto{
         transform: scale(1.5);
+        }
+        .imgProducto1{
+            display: none;
+        }
+        .imgProducto2{
+            display: flex;
         }
         .action li{
             opacity: 1;

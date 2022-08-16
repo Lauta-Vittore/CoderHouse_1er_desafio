@@ -53,17 +53,12 @@ body{
 /* pag contactos */
 
 .conteinerContactos {
-    display: grid;
+    background-image: $color-nav-footer;
+    display: flex;
+    flex-direction: column;
     height: auto;
-    grid-template-columns: 70% 30%;
-    grid-template-rows: 30% 40% 30%;
-    grid-template-areas: 
-    "texto contacto"
-    "formulario contacto"
-    "suscribite contacto";
     .formContacto {
-        grid-area: texto;
-        width: 100%;
+        width: 50%;
         text-align: center;
         margin: 0 auto;
         h1{
@@ -72,46 +67,94 @@ body{
         }
     }
     .formContact{
-        grid-area: formulario;
-        width: 90%;
+        width: 40%;
         margin: 3px auto;
         text-align: center;
+        
         #nombre {
             width: 100%;
             height: 45px;
             font-size: 25px;
+            color: map-get($map: $estilo, $key: colorLetra );
+            border: 2px solid black;
+            border-radius: 10px;
+            background-color: black;
+            &::placeholder{
+                padding-left: 10px ;
+                font-size: 20px;
+            }
         }
         #email {
-            width: 50%;
-            height: 35px;
+            width: 47%;
+            height: 45px;
             font-size: 25px;
+            color: map-get($map: $estilo, $key: colorLetra );
+            border: 2px solid black;
+            border-radius: 10px;
+            background-color: black;
+            margin-top: 10px;
+            &::placeholder{
+                padding-left: 10px ;
+                font-size: 20px;
+            }
         }
         #telefono {
-            width: 40%;
-            height: 35px;
+            width: 49%;
+            height: 45px;
             font-size: 25px;
-            margin: 10px
+            margin-top: 10px;
+            color: map-get($map: $estilo, $key: colorLetra );
+            border: 2px solid black;
+            border-radius: 10px;
+            background-color: black;
+            &::placeholder{
+                padding-left: 10px ;
+                font-size: 20px;
+            }
         }
         #mensaje{
             width: 100%;
-            height: 45px;
+            height: 100px;
             font-size: 25px;
+            color: map-get($map: $estilo, $key: colorLetra );
+            border: 2px solid black;
+            border-radius: 10px;
+            background-color: black;
+            margin-top: 10px;
+            &::placeholder{
+                padding-left: 10px ;
+                font-size: 20px;
+            }
         }
         .btnFormContacto{
             @extend .btnContactos
         }
     }
     .suscribite {
-        grid-area: suscribite;
-        width: 100%;
+        display: flex;
+        flex-direction: column;
+        width: 50%;
         text-align: center;
-        margin: 0 auto;
+        justify-content: center;
+        margin: 20px auto;
+        border: 2px solid black;
+        border-radius: 10px;
+        padding: 20px;
+        
         h3{
             margin-bottom: 10px;
         }
         #suscribite{
-            width: 80%;
-            height: 30px;
+            width: 100%;
+            height: 45px;
+            margin: 0 auto;
+            border: 2px solid black;
+            border-radius: 10px;
+            background-color: black;
+            color: map-get($map: $estilo, $key: colorLetra );
+            &::placeholder{
+                text-align: center;
+            }
         }
         .btn2{
             width: 100px;
@@ -121,10 +164,12 @@ body{
             overflow: hidden;
         }
         .btnFormContacto{
-            @extend .btnContactos
+            @extend .btnContactos;
+            margin: 10px auto;
         }
     }
     .contactos {
+        display: none;
         grid-area: contacto;
         /* background-image: url(../pic/img-contactanos.png); */
        /*  background-repeat: no-repeat;
@@ -196,12 +241,39 @@ body{
 }
 /* PAG SOBRE NOSOTROS */
 .sobreNosotros {
-    width: 100%;
+    display: flex;
+    flex-direction: column;
+    border: 2px solid black;
+    background: url(../pic/quiensomos3.png) bottom right no-repeat,
+   /*  url(../pic/coramano.png) bottom left no-repeat, */
+    #d1ad7a;
+    
+    /* background-repeat: no-repeat;
+    background-position-y: bottom;
+    background-position-x: right; */
+    background-size: contain;
+    .somos{
+        width: 60%;
+        font-size: 40px;
+        text-align: center;
+        margin-top: 100px;
+        margin-left: 50px;
+        margin-bottom: 50px;
+        font-family: 'Cedarville Cursive', cursive;
+        transition: all 1.5s;
+        &::before{
+            transform: scale3d(5rem)
+        }
+    }
+    .mapa{
+        margin-top: 20px;
+    }
+    /* width: 100%;
     text-align: center;
     background-color: white;
     .imgSobreNosotros{
         width: 90%;
-    }
+    } */
 }
 @import "footer";
 
@@ -234,13 +306,15 @@ body{
 
     .categoria {
         display: grid;
-        height: 700px;
+        height: 900px;
         grid-template-columns: 50% 50%;
-        grid-template-rows: 33% 33% 33% ;
+        grid-template-rows: 25% 25% 25% 25% ;
         grid-template-areas: 
+        "accesorio accesorio"
         "buzo cuellos"
         "buzo remeras"
-        "zapatillas zapatillas";
+        "zapatillas zapatillas"
+       ;
         width: 100%;
         .tipoCategoria{
             font-size: 50%;
@@ -261,42 +335,50 @@ body{
         }
     }
     .conteinerContactos {
-        grid-template-columns: 100%;
-        grid-template-rows: 10% 30% 25% 10% 20%;
-        grid-template-areas: 
-        "texto"
-        "formulario"
-        "suscribite"
-        " contacto"
-        " contacto";
         overflow: hidden;
-        .formContacto h1{
-            font-size: 15px;
-            margin: 10px;
+        .formContacto{
+            width: 80%;
+            h1{
+                font-size: 15px;
+                margin: 10px;
         }
-    }
+        }
     .formContact{
+        width: 70%;
         #nombre{
             width: 80%;
-            height: 30px;
         }
         #email{
             width: 80%;
-            height: 30px;
         }
         #telefono{
             width: 80%;
-            height: 30px;
         }
         #mensaje{
             width: 80%;
-            height: 30px;
         }
     }
+    .suscribite{
+        margin-top: 20px;
+        width: 90%;
+        border: 2px solid black;
+        border-radius: 10px;
+        padding: 20px;
+    }
+}
     .navegacionFooter{
         display: none;
     }
     .infoFooter{
         display: none;
+    }
+    .sobreNosotros{
+        background: #d1ad7a;
+        .somos{
+            margin: 15px auto;
+        }
+        .mapa{
+            width: 100%;
+        }
     }
 }

@@ -17,7 +17,7 @@
         }
         .collapse{
             color: white; 
-            justify-content: right;
+            justify-content: space-between;
             width: 100%;
             .conteiner{
                 ul{
@@ -56,6 +56,71 @@
                     }
                 }
             }
+            .conteinerBuscador{
+                margin-left: 10px;
+                width: 30px;
+                height: 30px;
+                position: relative;
+                border-radius: 30px;
+                border: 2px solid black;
+                transition: all 500ms ease;
+            }
+            
+            input{
+                width: 90%;
+                height: 100%;
+                background: transparent;
+                outline: 0;
+                border-style: none;
+                font-size: 25px;
+                font-weight: 100;
+                font-family: Arial, Helvetica, sans-serif;
+                color: white;
+                padding: 0 20px;
+                box-sizing: border-box;
+                &::placeholder{
+                    font-size: 17px;
+                }
+                
+            }
+            
+            label{
+                position: absolute;
+                right: 12px;
+                top: 0;
+                width: 10%;
+                height: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                font-size: 25px;
+                color: transparent;
+                transform: rotateZ(-90deg);
+                transition: all 1s ease;
+                cursor: pointer;
+                
+            }
+            
+            
+            /* span{
+                position: absolute;
+                left: calc(50% - 2px);
+                top: 60px;
+            } */
+            
+            .conteinerBuscador:hover{
+                width: 33%;
+            }
+            
+            .conteinerBuscador:hover span{
+                width: 0;
+            }
+            
+            .conteinerBuscador:hover label{
+                color: white;
+                transform: rotateZ(0deg);
+            }
+            
         }
     }
 }
