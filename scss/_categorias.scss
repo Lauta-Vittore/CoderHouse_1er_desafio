@@ -8,12 +8,12 @@ main{
         grid-template-areas: 
         "buzo zapatillas zapatillas"
         "buzo cuellos remeras"
-        "accesorio accesorio accesorio";
+        "buzo accesorio accesorio";
         justify-content: center;
         width: 100%;
         .buzos {
             grid-area: buzo;
-            background-image: url(../pic/buzo.jpeg);
+            background-image: url(../pic/buzo2.jpeg);
             background-position: center;
             background-size: cover;
             margin: 10px;
@@ -21,6 +21,7 @@ main{
             text-align: center;
             font-size: 100px;
             overflow: hidden;
+            color: white;
         }
         .buzos:hover{
             opacity: 0.8;
@@ -75,8 +76,7 @@ main{
         }
         .accesorios{
             grid-area: accesorio;
-            background-color: rgb(205, 50, 192);
-            margin: 10px;
+            background-color: rgb(212, 205, 212);
             background-image: url(../pic/accesorioCategoria.jpg);
             background-position: center;
             background-size: cover;
@@ -85,6 +85,7 @@ main{
             text-align: center;
             font-size: 50px;
             overflow: hidden;
+            color: rgb(133, 133, 133);
         }
         .accesorios:hover{
             opacity: 0.8;

@@ -329,9 +329,9 @@ body{
 }
     .seccionProductos{
         flex-direction: column;
-        .card{
-            margin: 10px auto;
-            width: 80%;
+        .container{
+            width: 90%;
+            margin: 20px auto;
         }
     }
     .conteinerContactos {
@@ -388,7 +388,8 @@ body{
            flex-direction: column;
             img{
                 display: none;
-            }
+            } 
         }        
     }
+    
 }
