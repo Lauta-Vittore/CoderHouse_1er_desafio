@@ -1,4 +1,4 @@
-.btnContactos, .conteinerContactos .formContact .btnFormContacto, .conteinerContactos .suscribite .btnFormContacto {
+.btnContactos, .conteinerContactos .btnFormContacto, .conteinerContactos .suscribite .btnFormContacto {
   width: 150px;
   height: 45px;
   background-color: white;
@@ -20,6 +20,16 @@ body {
     text-decoration: none; }
   body a:hover {
     color: black; }
+  body .btnWhatsapp {
+    position: fixed;
+    line-height: 55px;
+    bottom: 30px;
+    right: 30px; }
+    body .btnWhatsapp img {
+      position: fixed;
+      line-height: 55px;
+      bottom: 30px;
+      right: 30px; }
 
 /* css para nav */
 .row {
@@ -164,8 +174,7 @@ main .categoria {
     margin: 10px;
     justify-content: center;
     text-align: center;
-    font-size: 100px;
-    overflow: hidden;
+    font-size: 50px;
     color: black; }
     main .categoria .buzos h4 {
       margin-top: 100px; }
@@ -181,7 +190,7 @@ main .categoria {
     justify-content: center;
     text-align: center;
     font-size: 100px;
-    overflow: hidden; }
+    color: black; }
   main .categoria .zapatillas:hover {
     opacity: 0.8; }
   main .categoria .cuellos {
@@ -195,8 +204,7 @@ main .categoria {
     justify-content: center;
     text-align: center;
     color: white;
-    font-size: 50px;
-    overflow: hidden; }
+    font-size: 50px; }
   main .categoria .cuellos:hover {
     opacity: 0.8; }
   main .categoria .remeras {
@@ -210,7 +218,7 @@ main .categoria {
     justify-content: center;
     text-align: center;
     font-size: 50px;
-    overflow: hidden; }
+    color: black; }
   main .categoria .remeras:hover {
     opacity: 0.8; }
   main .categoria .accesorios {
@@ -223,7 +231,6 @@ main .categoria {
     justify-content: center;
     text-align: center;
     font-size: 50px;
-    overflow: hidden;
     color: white; }
   main .categoria .accesorios:hover {
     opacity: 0.8; }
@@ -242,6 +249,42 @@ main .categoria {
     background-color: rgba(128, 128, 128, 0.39); }
 
 /* termina css para categorias */
+.modal .whatsapp {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: #095e54;
+  color: white; }
+  .modal .whatsapp .btn-close {
+    margin: auto 10px; }
+
+.modal .modal-bodyWp {
+  background-color: #e6ddd4; }
+  .modal .modal-bodyWp .chat {
+    background-color: white;
+    width: 250px;
+    height: 100px;
+    margin: 10px;
+    border-radius: 5px; }
+    .modal .modal-bodyWp .chat .nombreChat {
+      font-size: 20px;
+      margin: 5px;
+      color: #555555; }
+    .modal .modal-bodyWp .chat .mensaje {
+      margin-left: 10px; }
+    .modal .modal-bodyWp .chat .hora {
+      text-align: right;
+      margin-right: 5px; }
+
+.modal .modal-footer .btnChat {
+  width: 80%;
+  margin: 0 auto;
+  background-color: #4fce5d;
+  border-radius: 15px;
+  color: white;
+  border: #4fce5d;
+  height: 40px; }
+
 .paraTi {
   display: flex;
   justify-content: space-around;
@@ -1248,6 +1291,14 @@ main .categoria {
       .conteinerContactos .formContact #mensaje::placeholder {
         padding-left: 10px;
         font-size: 20px; }
+  .conteinerContactos .btnFormContacto {
+    margin: 10px  auto; }
+  .conteinerContactos .btn2 {
+    width: 100px;
+    height: 30px;
+    background-color: orange;
+    margin-top: 10px;
+    overflow: hidden; }
   .conteinerContactos .suscribite {
     display: flex;
     flex-direction: column;
@@ -1311,7 +1362,8 @@ main .categoria {
     font-size: 25px; }
   .preguntasFrecuentes .pregunta {
     border-radius: 20px;
-    height: auto; }
+    height: auto;
+    padding: 1px; }
     .preguntasFrecuentes .pregunta h2 {
       margin: 20px;
       text-align: center;

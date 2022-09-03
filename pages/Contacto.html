@@ -24,7 +24,7 @@
           </button>
           <div class="collapse navbar-collapse col_9" id="navbarScroll">
             <div class="conteinerBuscador col-6">
-              <input type="text" placeholder="Buscar productos, Categoría, etc"><label for="#"><img src="../pic/lupa.png" alt="" style="width: 17px;"></label>
+              <input type="text" placeholder="Buscar productos, Categoría, etc"><label for="#"><img src="../pic/lupa.png" alt="lupa" style="width: 17px;"></label>
             </div>
             <div class="conteiner col-6">
                 <ul class="navbar-nav me-auto my-2 my-lg-0 col" style="--bs-scroll-height: 100px;">
@@ -48,7 +48,7 @@
                     </ul>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#"><img src="../pic/carro-de-compras.png" style="width:25px;" alt=""></a>
+                    <a class="nav-link" href="#"><img src="../pic/carro-de-compras.png" style="width:25px;" alt="carrito"></a>
                 </li>
                 </ul>
             </div>
@@ -71,24 +71,24 @@
                         <input id="email" type="email" placeholder="Email">
                         <input id="telefono" type="number" placeholder="Teléfono">
                         <input id="mensaje" type="text" placeholder="Mensaje">
-                        <div class="modal fade" id="exampleModalToggle" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
-                            <div class="modal-dialog modal-dialog-centered">
-                              <div class="modal-content">
-                                <div class="modal-header">
-                                  <h5 class="modal-title" id="exampleModalToggleLabel">Gracias por tu mensaje!</h5>
-                                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                                </div>
-                                <div class="modal-body">
-                                  Nos contactaremos contigo lo antes posible.
-                                </div>
-                                <div class="modal-footer">
-                                  <button class="btn2 btn-primary" data-bs-target="#exampleModalToggle2" data-bs-toggle="modal">Cerrar</button>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                          <button class="btnFormContacto" data-bs-toggle="modal" href="#exampleModalToggle" role="button">Enviar</button>
             </form>
+            <button class="btnFormContacto" data-bs-toggle="modal" href="#exampleModalToggle" role="button">Enviar</button>
+            <div class="modal fade" id="exampleModalToggle" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+              <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalToggleLabel">Gracias por tu mensaje!</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                    Nos contactaremos contigo lo antes posible.
+                  </div>
+                  <div class="modal-footer">
+                    <button class="btn2 btn-primary" data-bs-target="#exampleModalToggle2" data-bs-toggle="modal">Cerrar</button>
+                  </div>
+                </div>
+              </div>
+            </div>
             <div class="suscribite">
                 <h3>SUMATE A NUESTRA COMUNIDAD</h3>
                 <h3>Suscribite, no te pierdas ninguna oferta</h3>
@@ -122,6 +122,28 @@
                     <li class="li">Mayorista: xxxxxx@gmail.com</li>
                 </div>
             </ul>
+      <!-- Modal -->
+<div class="modal fade" id="exampleModal3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="whatsapp">
+        
+        <h5 class="modal-title" id="exampleModalLabel"><img src="../pic/perfilWp.webp" alt="perfil" style="width:50px ;"> Bukee Soporte </h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-bodyWp">
+        <div class="chat">
+          <h2 class="nombreChat">Bukee Indumentaria</h2>
+          <p class="mensaje">Hola! ¿Cómo podemos ayudarte?</p>
+          <p class="hora">16:52</p>
+        </div>
+      </div>
+      <div class="modal-footer">
+       <button type="button" href="https://api.whatsapp.com/send?phone=3541337512&text=Necesito%20ayuda%20en%20" class="btnChat"><img src="../pic/whatsapp.png" alt="" style="width: 20px;"> Empezar chat</button>
+      </div>
+    </div>
+  </div>
+</div>
     </main>
     <footer>
         <ul class="infoFooter">
@@ -147,7 +169,7 @@
             <li><a href="preguntas.html">Preguntas frecuentes</a></li>
         </ul>
     </footer>
-
+    <a class="btnWhatsapp" data-bs-toggle="modal" data-bs-target="#exampleModal3"><img src="../pic/whatsapp.png" alt="" style="width: 60px;"></a> 
     <!-- JavaScript Bundle with Popper -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
 </body>

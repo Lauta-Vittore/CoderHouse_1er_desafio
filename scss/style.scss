@@ -18,10 +18,24 @@ body{
     a:hover{
         color: black;
     }
+    .btnWhatsapp{
+        position: fixed;
+        line-height: 55px;
+        bottom: 30px;
+        right: 30px;
+        img{
+            position: fixed;
+            line-height: 55px;
+            bottom: 30px;
+            right: 30px;
+        }
+
+    }
 }
 @import "nav";
 @import "infoCompras";
 @import "categorias";
+@import "whatsapp";
 .paraTi{
     display: flex;
     justify-content: space-around;
@@ -131,9 +145,17 @@ body{
                 font-size: 20px;
             }
         }
-        .btnFormContacto{
-            @extend .btnContactos
-        }
+    }
+    .btnFormContacto{
+        @extend .btnContactos;
+        margin: 10px  auto;
+    }
+    .btn2{
+        width: 100px;
+        height: 30px;
+        background-color: map-get($map: $estilo, $key: colorFondo );
+        margin-top: 10px;
+        overflow: hidden;
     }
     .suscribite {
         display: flex;
@@ -211,6 +233,7 @@ body{
     .pregunta {
         border-radius: 20px;
         height: auto;
+        padding: 1px;
         h2{
             margin: 20px;
             text-align: center;
