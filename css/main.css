@@ -230,7 +230,8 @@ main .categoria {
   main .categoria .btnVerCategoria {
     width: 200px;
     height: 50px;
-    background-color: rgba(0, 0, 0, 0.075);
+    color: white;
+    background-color: rgba(0, 0, 0, 0.418);
     border-radius: 6px;
     overflow: hidden;
     font-size: 20px; }
