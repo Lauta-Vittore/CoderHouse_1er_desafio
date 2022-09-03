@@ -13,7 +13,7 @@ main{
         width: 100%;
         .buzos {
             grid-area: buzo;
-            background-image: url(../pic/buzo2.jpeg);
+            background-image: url(../pic/buzo.jpeg);
             background-position: center;
             background-size: cover;
             margin: 10px;
@@ -21,7 +21,10 @@ main{
             text-align: center;
             font-size: 100px;
             overflow: hidden;
-            color: white;
+            color: rgb(0, 0, 0);
+            h4{
+                margin-top: 100px;
+            }
         }
         .buzos:hover{
             opacity: 0.8;
@@ -76,16 +79,16 @@ main{
         }
         .accesorios{
             grid-area: accesorio;
-            background-color: rgb(212, 205, 212);
-            background-image: url(../pic/accesorioCategoria.jpg);
-            background-position: center;
+            background-color: rgb(211, 211, 211);
+            background-image: url(../pic/accesorio1-2.jpeg);
+            background-position-y: bottom;
             background-size: cover;
             margin: 10px;
             justify-content: center;
             text-align: center;
             font-size: 50px;
             overflow: hidden;
-            color: rgb(133, 133, 133);
+            color: rgb(255, 255, 255);
         }
         .accesorios:hover{
             opacity: 0.8;
@@ -99,8 +102,10 @@ main{
             font-size: 20px;
         }
         .tipoCategoria{
-            font-size: 70px;
+            margin-top: 15px;
+            font-size: 45px;
             text-align: center;
+            background-color: rgba(128, 128, 128, 0.39);
         }
     }
 }

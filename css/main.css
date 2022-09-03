@@ -158,7 +158,7 @@ main .categoria {
   width: 100%; }
   main .categoria .buzos {
     grid-area: buzo;
-    background-image: url(../pic/buzo2.jpeg);
+    background-image: url(../pic/buzo.jpeg);
     background-position: center;
     background-size: cover;
     margin: 10px;
@@ -166,7 +166,9 @@ main .categoria {
     text-align: center;
     font-size: 100px;
     overflow: hidden;
-    color: white; }
+    color: black; }
+    main .categoria .buzos h4 {
+      margin-top: 100px; }
   main .categoria .buzos:hover {
     opacity: 0.8; }
   main .categoria .zapatillas {
@@ -213,16 +215,16 @@ main .categoria {
     opacity: 0.8; }
   main .categoria .accesorios {
     grid-area: accesorio;
-    background-color: #d4cdd4;
-    background-image: url(../pic/accesorioCategoria.jpg);
-    background-position: center;
+    background-color: lightgray;
+    background-image: url(../pic/accesorio1-2.jpeg);
+    background-position-y: bottom;
     background-size: cover;
     margin: 10px;
     justify-content: center;
     text-align: center;
     font-size: 50px;
     overflow: hidden;
-    color: #858585; }
+    color: white; }
   main .categoria .accesorios:hover {
     opacity: 0.8; }
   main .categoria .btnVerCategoria {
@@ -233,8 +235,10 @@ main .categoria {
     overflow: hidden;
     font-size: 20px; }
   main .categoria .tipoCategoria {
-    font-size: 70px;
-    text-align: center; }
+    margin-top: 15px;
+    font-size: 45px;
+    text-align: center;
+    background-color: rgba(128, 128, 128, 0.39); }
 
 /* termina css para categorias */
 .paraTi {
@@ -1176,14 +1180,19 @@ main .categoria {
 /* fin pag productos */
 /* pag contactos */
 .conteinerContactos {
-  background-image: linear-gradient(to right, orange, orange, black);
+  background-image: url(../pic/fondoNosotros.png);
+  background-repeat: no-repeat;
+  background-size: cover;
   display: flex;
   flex-direction: column;
   height: auto; }
   .conteinerContactos .formContacto {
     width: 50%;
     text-align: center;
-    margin: 0 auto; }
+    margin: 10px auto;
+    background-color: rgba(255, 255, 255, 0.63);
+    border: 2px solid black;
+    border-radius: 10px; }
     .conteinerContactos .formContacto h1 {
       margin-top: 50px;
       font-size: 25px; }
@@ -1245,6 +1254,7 @@ main .categoria {
     text-align: center;
     justify-content: center;
     margin: 20px auto;
+    background-color: rgba(255, 255, 255, 0.63);
     border: 2px solid black;
     border-radius: 10px;
     padding: 20px; }
@@ -1337,31 +1347,18 @@ main .categoria {
 .sobreNosotros {
   display: flex;
   flex-direction: column;
-  border: 2px solid black;
-  background: url(../pic/quiensomos3.png) bottom right no-repeat, #d1ad7a;
-  /* background-repeat: no-repeat;
-    background-position-y: bottom;
-    background-position-x: right; */
-  background-size: contain;
-  /* width: 100%;
-    text-align: center;
-    background-color: white;
-    .imgSobreNosotros{
-        width: 90%;
-    } */ }
-  .sobreNosotros .somos {
-    width: 60%;
-    font-size: 40px;
-    text-align: center;
-    margin-top: 100px;
-    margin-left: 50px;
-    margin-bottom: 50px;
+  background-color: white; }
+  .sobreNosotros h1 {
     font-family: 'Cedarville Cursive', cursive;
-    transition: all 1.5s; }
-    .sobreNosotros .somos::before {
-      transform: scale3d(5rem); }
+    text-align: center;
+    font-size: 80px;
+    border-bottom: 2px solid black; }
+  .sobreNosotros p {
+    text-align: center;
+    font-size: 50px; }
   .sobreNosotros .mapa {
-    margin-top: 20px; }
+    width: 90%;
+    margin: 20px auto; }
 
 /* css footer */
 footer {
@@ -1460,12 +1457,10 @@ footer {
     display: none; }
   .infoFooter {
     display: none; }
-  .sobreNosotros {
-    background: #d1ad7a; }
-    .sobreNosotros .somos {
-      margin: 15px auto; }
-    .sobreNosotros .mapa {
-      width: 100%; }
+  .sobreNosotros h1 {
+    font-size: 50px; }
+  .sobreNosotros p {
+    font-size: 25px; }
   .infoCompra {
     height: 200px; }
     .infoCompra .btnCompra {

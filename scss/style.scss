@@ -53,14 +53,19 @@ body{
 /* pag contactos */
 
 .conteinerContactos {
-    background-image: $color-nav-footer;
+    background-image: url(../pic/fondoNosotros.png);
+    background-repeat: no-repeat;
+    background-size: cover;
     display: flex;
     flex-direction: column;
     height: auto;
     .formContacto {
         width: 50%;
         text-align: center;
-        margin: 0 auto;
+        margin: 10px auto;
+        background-color: rgba(255, 255, 255, 0.63);
+        border: 2px solid black;
+        border-radius: 10px;
         h1{
             margin-top: 50px;
             font-size: 25px;
@@ -137,6 +142,7 @@ body{
         text-align: center;
         justify-content: center;
         margin: 20px auto;
+        background-color: rgba(255, 255, 255, 0.63);
         border: 2px solid black;
         border-radius: 10px;
         padding: 20px;
@@ -241,39 +247,25 @@ body{
 }
 /* PAG SOBRE NOSOTROS */
 .sobreNosotros {
+    
     display: flex;
     flex-direction: column;
-    border: 2px solid black;
-    background: url(../pic/quiensomos3.png) bottom right no-repeat,
-   /*  url(../pic/coramano.png) bottom left no-repeat, */
-    #d1ad7a;
+    background-color: white;
     
-    /* background-repeat: no-repeat;
-    background-position-y: bottom;
-    background-position-x: right; */
-    background-size: contain;
-    .somos{
-        width: 60%;
-        font-size: 40px;
-        text-align: center;
-        margin-top: 100px;
-        margin-left: 50px;
-        margin-bottom: 50px;
+    h1{
         font-family: 'Cedarville Cursive', cursive;
-        transition: all 1.5s;
-        &::before{
-            transform: scale3d(5rem)
-        }
+        text-align: center;
+        font-size: 80px;
+        border-bottom: 2px solid black;
+    }
+    p{
+        text-align: center;
+        font-size: 50px;
     }
     .mapa{
-        margin-top: 20px;
-    }
-    /* width: 100%;
-    text-align: center;
-    background-color: white;
-    .imgSobreNosotros{
         width: 90%;
-    } */
+        margin: 20px auto;
+    }
 }
 @import "footer";
 
@@ -373,12 +365,11 @@ body{
         display: none;
     }
     .sobreNosotros{
-        background: #d1ad7a;
-        .somos{
-            margin: 15px auto;
+        h1{
+            font-size: 50px;
         }
-        .mapa{
-            width: 100%;
+        p{
+            font-size: 25px;
         }
     }
     .infoCompra{
